@@ -36,7 +36,6 @@
 * <b>Version Info</b>
 * <ul>
 * <li>$Id: phpCliSrc.php 51 2007-10-15 05:34:52Z bryn $</li>
-* <li>$HeadURL: svn+ssh://bryn@dev.brynmosher.com/subversion/phpCliSrc/trunk/phpCliSrc.php $</li>
 * </ul>
 * @package phpCliSrc
 * @author Bryn Mosher
