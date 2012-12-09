@@ -3,7 +3,6 @@
 REM Windows wrapper for phpCliSrc.php programs
 REM Copyright 2006-$LastChangedDate: 2007-08-19 21:17:29 -0700 (Sun, 19 Aug 2007) $ Bryn Mosher - All rights reserved
 REM $Id: phpCliSrc.cmd 44 2007-08-20 04:17:29Z bryn $
-REM $HeadURL: svn+ssh://bryn@dev.brynmosher.com/subversion/phpCliSrc/trunk/phpCliSrc.cmd $
 
 REM This is an example Windows/DOS batch wrapper for your utility
 
