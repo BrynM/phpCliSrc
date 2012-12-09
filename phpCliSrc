@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Bash wrapper for phpCliSrc.php scripts
+# Copyright 2006-$LastChangedDate: 2007-12-24 15:10:06 -0800 (Mon, 24 Dec 2007) $ Bryn Mosher - All rights reserved
+# $Id: phpCliSrc 59 2007-12-24 23:10:06Z bryn $
+# $HeadURL: svn+ssh://bryn@dev.brynmosher.com/subversion/phpCliSrc/trunk/phpCliSrc $
+
+#
+# This is an example bash wrapper for your utility. Please edit to taste.
+#
+
+#
+# You can set a couple of things here
+#
+
+# Locationo of PHP
+export phpPath=/usr/bin/php
+if [ ! -f ${phpPath} ]; then
+	echo "ERROR! ${phpPath} did not exist. Be sure \$\{phpPath\} is valid."
+	exit 1
+fi
+
+# This is the name of your PHP file
+export utilityName=phpCliSrc_example.php
+
+# The path to your utility - this will get auto populated
+export utilityDir=`dirname $0`
+
+# now we compile the utility info above...
+export utilityPath=${utilityDir}/${utilityName}
+
+# Our process priority: -20 (highest priority) to 19 (lowest) straight from the shell command
+# We pick a low level just in case we're running on an active server
+export niceness=16
+
+# The utility's help function will use this to recognize the wrapper
+export wpid=$$
+
+#
+# Now we start our script
+#
+nice -n $niceness $phpPath -d display_errors=on -d display_startup_errors=on -d error_reporting=2047 -f $utilityPath -- $*
+
+#
+# Pass the exit code to to the console. Do not change this.
+#
+exit $?
