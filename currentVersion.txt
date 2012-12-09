@@ -1,6 +1,5 @@
 Current Revision
 $Id: currentVersion.txt 40 2007-08-20 04:01:09Z bryn $
-$URL: svn+ssh://bryn@dev.brynmosher.com/subversion/phpCliSrc/trunk/currentVersion.txt $
 $WCREV$
 $WCDATE$
 $WCNOW$
