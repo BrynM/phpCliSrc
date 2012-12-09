@@ -3,7 +3,6 @@
 # Bash wrapper for phpCliSrc.php scripts
 # Copyright 2006-$LastChangedDate: 2007-12-24 15:10:06 -0800 (Mon, 24 Dec 2007) $ Bryn Mosher - All rights reserved
 # $Id: phpCliSrc 59 2007-12-24 23:10:06Z bryn $
-# $HeadURL: svn+ssh://bryn@dev.brynmosher.com/subversion/phpCliSrc/trunk/phpCliSrc $
 
 #
 # This is an example bash wrapper for your utility. Please edit to taste.
